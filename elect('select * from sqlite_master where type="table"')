@@ -1,0 +1,104 @@
+[90m= [39m[
+    {#3790
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mmigrations[39m",
+      +"[1mtbl_name[22m": "[32mmigrations[39m",
+      +"[1mrootpage[22m": [35m2[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "migrations" ("id" integer primary key autoincrement not null, "migration" varchar not null, "batch" integer not null)[39m",
+    },
+    {#3791
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32msqlite_sequence[39m",
+      +"[1mtbl_name[22m": "[32msqlite_sequence[39m",
+      +"[1mrootpage[22m": [35m3[39m,
+      +"[1msql[22m": "[32mCREATE TABLE sqlite_sequence(name,seq)[39m",
+    },
+    {#3792
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32musers[39m",
+      +"[1mtbl_name[22m": "[32musers[39m",
+      +"[1mrootpage[22m": [35m4[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "users" ("id" integer primary key autoincrement not null, "name" varchar not null, "email" varchar not null, "email_verified_at" datetime, "password" varchar not null, "remember_token" varchar, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+    {#3793
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mpassword_reset_tokens[39m",
+      +"[1mtbl_name[22m": "[32mpassword_reset_tokens[39m",
+      +"[1mrootpage[22m": [35m6[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "password_reset_tokens" ("email" varchar not null, "token" varchar not null, "created_at" datetime, primary key ("email"))[39m",
+    },
+    {#3794
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mfailed_jobs[39m",
+      +"[1mtbl_name[22m": "[32mfailed_jobs[39m",
+      +"[1mrootpage[22m": [35m8[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "failed_jobs" ("id" integer primary key autoincrement not null, "uuid" varchar not null, "connection" text not null, "queue" text not null, "payload" text not null, "exception" text not null, "failed_at" datetime not null default CURRENT_TIMESTAMP)[39m",
+    },
+    {#3795
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mpersonal_access_tokens[39m",
+      +"[1mtbl_name[22m": "[32mpersonal_access_tokens[39m",
+      +"[1mrootpage[22m": [35m10[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "personal_access_tokens" ("id" integer primary key autoincrement not null, "tokenable_type" varchar not null, "tokenable_id" integer not null, "name" varchar not null, "token" varchar not null, "abilities" text, "last_used_at" datetime, "expires_at" datetime, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+    {#3796
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32msearches[39m",
+      +"[1mtbl_name[22m": "[32msearches[39m",
+      +"[1mrootpage[22m": [35m13[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "searches" ("id" integer primary key autoincrement not null, "key_word" varchar not null, "summarize" varchar not null, "article" varchar not null, "img_src" varchar not null, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+  ]
+
+[90m= [39m[
+    {#3790
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mmigrations[39m",
+      +"[1mtbl_name[22m": "[32mmigrations[39m",
+      +"[1mrootpage[22m": [35m2[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "migrations" ("id" integer primary key autoincrement not null, "migration" varchar not null, "batch" integer not null)[39m",
+    },
+    {#3791
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32msqlite_sequence[39m",
+      +"[1mtbl_name[22m": "[32msqlite_sequence[39m",
+      +"[1mrootpage[22m": [35m3[39m,
+      +"[1msql[22m": "[32mCREATE TABLE sqlite_sequence(name,seq)[39m",
+    },
+    {#3792
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32musers[39m",
+      +"[1mtbl_name[22m": "[32musers[39m",
+      +"[1mrootpage[22m": [35m4[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "users" ("id" integer primary key autoincrement not null, "name" varchar not null, "email" varchar not null, "email_verified_at" datetime, "password" varchar not null, "remember_token" varchar, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+    {#3793
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mpassword_reset_tokens[39m",
+      +"[1mtbl_name[22m": "[32mpassword_reset_tokens[39m",
+      +"[1mrootpage[22m": [35m6[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "password_reset_tokens" ("email" varchar not null, "token" varchar not null, "created_at" datetime, primary key ("email"))[39m",
+    },
+    {#3794
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mfailed_jobs[39m",
+      +"[1mtbl_name[22m": "[32mfailed_jobs[39m",
+      +"[1mrootpage[22m": [35m8[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "failed_jobs" ("id" integer primary key autoincrement not null, "uuid" varchar not null, "connection" text not null, "queue" text not null, "payload" text not null, "exception" text not null, "failed_at" datetime not null default CURRENT_TIMESTAMP)[39m",
+    },
+    {#3795
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32mpersonal_access_tokens[39m",
+      +"[1mtbl_name[22m": "[32mpersonal_access_tokens[39m",
+      +"[1mrootpage[22m": [35m10[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "personal_access_tokens" ("id" integer primary key autoincrement not null, "tokenable_type" varchar not null, "tokenable_id" integer not null, "name" varchar not null, "token" varchar not null, "abilities" text, "last_used_at" datetime, "expires_at" datetime, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+    {#3796
+      +"[1mtype[22m": "[32mtable[39m",
+      +"[1mname[22m": "[32msearches[39m",
+      +"[1mtbl_name[22m": "[32msearches[39m",
+      +"[1mrootpage[22m": [35m13[39m,
+      +"[1msql[22m": "[32mCREATE TABLE "searches" ("id" integer primary key autoincrement not null, "key_word" varchar not null, "summarize" varchar not null, "article" varchar not null, "img_src" varchar not null, "created_at" datetime, "updated_at" datetime)[39m",
+    },
+  ]
+
