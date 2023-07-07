@@ -1,0 +1,84 @@
+:root {
+    --color--body-background: hsl(220, 50%, 5%);
+    --color--body-foreground: hsl(0, 0%, 90%);
+
+    --color--keyboard-key-background--held: hsl(220, 40%, 40%);
+    --color--keyboard-key-background--selected: hsl(0, 0%, 90%);
+    --color--keyboard-key-foreground--selected: hsl(220, 50%, 5%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: var(--color--body-background);
+    color: var(--color--body-foreground);
+
+    max-width: 85rem;
+    min-height: 100vh;
+
+    margin: auto;
+    padding: 2rem;
+}
+
+h1 {
+    margin-block-end: 2rem;
+
+    font-size: 2.4rem;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.keyboard > .row {
+    display: flex;
+    gap: inherit;
+}
+
+.keyboard > .row > .key {
+    height: 5rem;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid currentColor;
+    border-radius: 0.2rem;
+}
+
+.keyboard > .row > .key--special {
+    flex: 1;
+}
+
+.keyboard > .row > .key--icon > svg {
+    fill: currentColor;
+
+    width: 2rem;
+}
+
+.keyboard > .row > .key--held {
+    background: var(--color--keyboard-key-background--held);
+}
+
+.keyboard > .row > .key--selected {
+    background: var(--color--keyboard-key-background--selected);
+    color: var(--color--keyboard-key-foreground--selected);
+}
+
+.hidden {
+    display: none;
+}

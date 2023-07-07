@@ -76,7 +76,6 @@ class PostController extends Controller
                 "article" => $request->article,
                 "img" => $path,
             ]);
-
         }else {
             $validated = $request->validate([
                 'title' => 'required|unique:posts|max:255',
@@ -91,7 +90,6 @@ class PostController extends Controller
                 "article" => $request->article,
                 "img" => "",
             ]);
-
         }
         return redirect()->route('post.show', ['title' => $request->title])
                          ->with('message', 'پست شما با موفقیت ساخته شد');

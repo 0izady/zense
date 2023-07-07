@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
 Route::get('/searches', [\App\Http\Controllers\ApiController::class,'searches']);
 Route::get('/top_search', [\App\Http\Controllers\ApiController::class,'PopularSearch']);
 Route::get('/GetSearch/{name}', [\App\Http\Controllers\ApiController::class,'GetSearch']);

@@ -23,9 +23,9 @@
         "@fortawesome/free-solid-svg-icons": "^6.4.0",
         "@fortawesome/vue-fontawesome": "^3.0.3",
         "@vitejs/plugin-vue": "^4.0.0",
-        "flowbite": "^1.6.5",
         "keyword-extractor": "^0.0.25",
         "moment": "^2.29.4",
+        "flowbite": "^1.6.5",
         "shiki": "^0.14.3",
         "vue": "^3.2.36",
         "vue-loader": "^17.0.1"
