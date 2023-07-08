@@ -61,4 +61,7 @@ Ways of communication with the developer
 
 
 <br /><br />
-To see sample photos from the program, please go to the screen shot directory
+To see sample photos from the program, please go to the screenshot directory
+<br /><br />
+### note ###
+in /app/Http/Controllers/ApiController.php on line 67,115 push your open AI API keys
