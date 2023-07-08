@@ -10,6 +10,7 @@ And with this, you can save time and easily get information about your subject <
 
 After all these tasks, the keyword, the address of the photo we got from Wikipedia, and the number of search visits are stored in the database, and a cache of search results that includes a summary of the text, article, and photo is stored for up to 24 hours.
 
+![home](https://github.com/ezady/zense/blob/24ebb79d762f258765454302fa105cd0bf1b4f22/screen%20shot/home.png)
 
 Other sections:
 * API
@@ -57,3 +58,7 @@ Information about the program and its developer
 
 ## Contact us ##
 Ways of communication with the developer
+
+
+<br /><br />
+To see sample photos from the program, please go to the screen shot directory
