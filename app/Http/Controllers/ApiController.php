@@ -64,7 +64,7 @@ class ApiController extends Controller
     public function chat($text)
     {
         // brows keys
-        $open_ai = new OpenAI("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");
+        $open_ai = new OpenAI("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");
 
         // make chat
         $chat = $open_ai->chat([
@@ -112,7 +112,7 @@ class ApiController extends Controller
         // set $key_word to array , for confirm inertia
         $ok = [$key_word];
         // brows keys
-        $open_ai = new OpenAI("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");
+        $open_ai = new OpenAI("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");
         DetectLanguage::setApiKey("dd31506418887e4a23c11650c3367dd4");
         // get lang code
         $languageCode = DetectLanguage::simpleDetect($key_word);
